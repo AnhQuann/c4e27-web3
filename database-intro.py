@@ -43,7 +43,6 @@ first_collection = db_demo["my_collection"]
 #     print("Not found")
 
 # 8. UPDATE
-
 update_document = first_collection.find_one({"_id": ObjectId("5c9cdd4d68a3ff2644dea326")})
 new_value = {"$set": {"title": "KHONG BIET"}}
 first_collection.update_one(update_document, new_value)
